@@ -18,16 +18,16 @@
         <div class="header-ct">
             <div class="logo"></div>
             <ul class="nav">
-                <li><a href="#">首页</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">技术栈</a></li>
-                <li><a href="#">自我介绍</a></li>
-                <li><a href="#">联系我</a></li>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#projects">作品</a></li>
+                <li><a href="#skills">技术栈</a></li>
+                <li><a href="#about">自我介绍</a></li>
+                <li><a href="#contact">联系我</a></li>
             </ul>
         </div>
     </header>
     <main>
-        <section class="home">
+        <section class="home" id="home">
             <div class="content-ct">
                 <div class="content">
                     <h1>
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <div class="qqmusic">
                 <div class="qqmusic-view">
                     <img src="./assets/QRcode.png" alt="" class="qrcode">
@@ -120,12 +120,12 @@
                     Live Demo
                 </a>
             </div>
-            <div class="qqmusic">
+            <div class="douban">
                 <div class="qqmusic-view">
                     <img src="./assets/doubanQR.png" alt="" class="qrcode">
                     <img src="./assets/douban.gif" alt="" class="qqmusicgif">
                 </div>
-                <div class="qqmusic-info">
+                <div class="douban-info">
                     <h4>移动端豆瓣电影</h4>
                     <div class="qqmusic-tec">
                         <svg class="icon" aria-hidden="true">
@@ -140,19 +140,100 @@
                     </div>
                     <div class="qqmusic-intro">
                         <ul class="intro-list">
-                            <li>express搭建服务器伪造请求，部署在https://app-qqmusicapi.wedeploy.io</li>
-                            <li>功能实现: 轮播组件 tab切换组件 播放器组件 歌词滚动</li>
-                            <li>性能优化: 懒加载 AJAX加锁 滚动事件节流</li>
-                            <li>githubpage部署的页面请求出了点问题，大部分音乐资源返回403forbidden 建议从github下载源码本地打开可以正常访问 </li>
+                            <li>Ajax发送请求，返回数据</li>
+                            <li>jQuery操作DOM渲染页面</li>
+                            <li>功能实现: tab切换组件 懒加载 AJAX加锁 滚动事件节流</li>
                         </ul>
                     </div>
-                    <a href="https://github.com/cccccchenyuhao/qqmusic" class="github-btn">
+                    <a href="https://github.com/cccccchenyuhao/douban-mobile" class="github-btn">
                         View Github
+                    </a>
+                    <a href="https://chenyuhao.top/douban-mobile/" class="github-btn">
+                        Live Demo
                     </a>
                 </div>
             </div>
+            <div class="design">
+                <h4>设计</h4>
+                <div class="cnode-tec">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-Ps"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-AI"></use>
+                    </svg>
+
+                </div>
+                <div class="design-ct">
+                    <div id="ui1"></div>
+                    <div id="ui2"></div>
+                    <div id="ui3"></div>
+                    <div id="ui4"></div>
+                    <div id="ui5"></div>
+                    <div id="ui6"></div>
+                    <div id="ui7"></div>
+                    <div id="ui8"></div>
+                </div>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h4>技术栈</h4>
+            <div class="skills-ct">
+                <div class="flex-skills">
+                    <div class="card">
+                        <img src="./assets/html.png" alt="">
+                        <p>HTML</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/css.png" alt="">
+                        <p>CSS</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/js.png" alt="">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/vue.png" alt="">
+                        <p>Vue.js</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/node.png" alt="">
+                        <p>Node.js</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/webpack.png" alt="">
+                        <p>webpack</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/jquery.jpg" alt="">
+                        <p>jQuery</p>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/ps.svg" alt="">
+                        <p>Photoshop</p>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
+    <footer id="about">
+        <div class="container">
+            <p>感谢观看我的简历</p>
+            <p>此页面主要展示我近期的作品</p>
+            <p>如果感兴趣</p>
+            <p>非常期待与您的详聊</p>
+
+            <a href="https://github.com/cccccchenyuhao">github</a>
+            <a href="https://chenyuhao.top/">博客</a>
+            <a href="https://www.jianshu.com/u/57b496e67761">简书</a>
+        </div>
+        <div class="author" id="contact">
+            <p>Made by Chenyuhao</p>
+                        <p>cccccchenyuhao@gmail.com</p>
+        </div>
+    </footer>
     <script>
         var typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
@@ -162,7 +243,7 @@
             typeSpeed: 50
         });
     </script>
-    <script src="https://at.alicdn.com/t/font_926107_9dwo3hd99tr.js"></script>
+    <script src="https://at.alicdn.com/t/font_926107_88wuit19zh5.js"></script>
 </body>
 
 </html>

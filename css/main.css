@@ -95,7 +95,7 @@ header {
     margin-right: 20px;
 }
 
-.qqmusic {
+.qqmusic, .douban {
     display: flex;
     align-items: center;
     padding: 120px 0;
@@ -106,7 +106,7 @@ header {
     flex: 1;
 }
 
-.qqmusic-info {
+.qqmusic-info, .douban-info {
     flex: 1;
     text-align: left;
 }
@@ -174,9 +174,11 @@ header {
 .cnode img {
     width: 80%;
 }
-.cnode h4 {
+
+.projects h4 {
     font-size: 24px;
 }
+
 .cnode-tec {
     margin: 20px 0;
 }
@@ -186,7 +188,7 @@ header {
     font-size: 4em;
 }
 
-.cnode > p {
+.cnode>p {
     margin-top: 60px;
 }
 
@@ -197,8 +199,131 @@ header {
     margin: 30px auto;
     text-align: left;
 }
-.cnode > a {
-margin: 0 14px;
+
+.cnode>a {
+    margin: 0 14px;
 }
 
-/* 豆瓣项目 */
+.douban-info a {
+    margin: 0 10px;
+}
+
+.design {
+    padding: 120px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.design-ct {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.design-ct div {
+    border: 1px solid rgba(0, 0, 0, .1);
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+#ui1 {
+    background: url(../assets/ui1.jpg) center/contain no-repeat;
+}
+
+#ui2 {
+    background: url(../assets/ui2.jpg) center/contain no-repeat;
+}
+
+#ui3 {
+    background: url(../assets/ui3.jpg) center/contain no-repeat;
+}
+
+#ui4 {
+    background: url(../assets/ui4.jpg) center/contain no-repeat;
+}
+
+#ui5 {
+    background: url(../assets/ui5.jpg) center/contain no-repeat;
+}
+
+#ui6 {
+    background: url(../assets/ui6.jpg) center/contain no-repeat;
+}
+
+#ui7 {
+    background: url(../assets/sketch1.jpg) center/contain no-repeat;
+}
+
+#ui8 {
+    background: url(../assets/sketch2.jpg) center/contain no-repeat;
+}
+
+.skills {
+    background-color: #FAFAFB;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.skills h4 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.skills-ct {
+    max-width: 1050px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+.flex-skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    transition: all 200ms ease;
+    padding: 2.5rem;
+    background: #fff;
+    border: 1px solid #ebecec;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    margin: .5rem;
+    flex: 1 1 calc(25% - 1rem);
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .container {
+    padding: 60px;
+    background-color: #282C33;
+    color: #bec6d5;
+}
+
+footer a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #45B9FC;
+}
+
+.author {
+    padding: 30px;
+    background-color: #1D1D25;
+    color: #909db7;
+}
