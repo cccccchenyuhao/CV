@@ -1,0 +1,204 @@
+/* 头部导航 */
+
+header {
+    background-color: #1d1d25;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.header-ct {
+    max-width: 1050px;
+    margin: 0 auto;
+    height: 60px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background: url(../assets/logo.svg) center/contain no-repeat;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    padding: 0 20px;
+    color: #bec6d5;
+}
+
+.nav a:hover {
+    color: #00daf3;
+}
+
+/* 首页 */
+
+.home {
+    margin-top: 60px;
+    padding: 96px;
+    text-align: center;
+    background-color: #343841;
+}
+
+.content.ct {
+    padding: 0 32px;
+    max-width: 650px;
+}
+
+.content>h1 {
+    font-size: 48px;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.dev {
+    color: #45bafc;
+}
+
+.des {
+    color: #57eea1;
+}
+
+#typed {
+    font-size: 18px;
+    color: #bec6d5;
+    margin: 40px 0;
+}
+
+.typed-cursor {
+    color: #fff;
+}
+
+/* 项目 */
+
+.projects {
+    text-align: center;
+}
+
+.projects img {
+    vertical-align: middle;
+}
+
+.qqmusicgif {
+    width: 240px;
+}
+
+.qrcode {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.qqmusic {
+    display: flex;
+    align-items: center;
+    padding: 120px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.qqmusic-view {
+    flex: 1;
+}
+
+.qqmusic-info {
+    flex: 1;
+    text-align: left;
+}
+
+.qqmusic-info h4 {
+    font-size: 24px;
+}
+
+.qqmusic-tec {
+    margin-top: 20px;
+}
+
+.qqmusic-tec svg {
+    padding: 10px;
+    font-size: 4em;
+}
+
+.qqmusic-intro {
+    padding-right: 60px;
+}
+
+.github-btn {
+    display: inline-block;
+    -webkit-appearance: none;
+    -webkit-transition: background 500ms ease;
+    transition: background 500ms ease;
+    background-image: -webkit-gradient(linear, left top, right top, from(#45bafc), color-stop(51%, #57EEA1), to(#45bafc));
+    background-image: linear-gradient(to right, #45bafc 0%, #57EEA1 51%, #45bafc 100%);
+    background-size: 300% auto;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-box-shadow: 2px 3px 8px rgba(0, 0, 0, .1);
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.github-btn:hover {
+    text-decoration: none;
+    background-position: right center;
+}
+
+.intro-list {
+    list-style-type: disc;
+    padding: 40px 0;
+}
+
+.intro-list li {
+    padding: 4px 0;
+}
+
+/* cnode项目 */
+
+.cnode {
+    padding: 120px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
+.cnode img {
+    width: 80%;
+}
+.cnode h4 {
+    font-size: 24px;
+}
+.cnode-tec {
+    margin: 20px 0;
+}
+
+.cnode-tec svg {
+    padding: 10px;
+    font-size: 4em;
+}
+
+.cnode > p {
+    margin-top: 60px;
+}
+
+.cnode-component {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 250px;
+    margin: 30px auto;
+    text-align: left;
+}
+.cnode > a {
+margin: 0 14px;
+}
+
+/* 豆瓣项目 */

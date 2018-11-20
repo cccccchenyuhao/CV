@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-ct">
+            <div class="logo"></div>
+            <ul class="nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">技术栈</a></li>
+                <li><a href="#">自我介绍</a></li>
+                <li><a href="#">联系我</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="home">
+            <div class="content-ct">
+                <div class="content">
+                    <h1>
+                        <span class="dev">Developer</span>
+                        /
+                        <span class="des">Designer</span>
+                    </h1>
+                    <div class="intro" id="typed-strings">
+                        <p>
+                            你好，欢迎来到我的网站<br>
+                            我叫陈宇浩<br>
+                            正在努力成为一名优秀的前端工程师<br>
+                            喜欢互联网，希望能和一群可爱的人一起打造一款很棒的产品<br>
+                            求大佬带走ε==(づ′▽`)づ
+                        </p>
+                    </div>
+                    <span id="typed"></span>
+                </div>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="qqmusic">
+                <div class="qqmusic-view">
+                    <img src="./assets/QRcode.png" alt="" class="qrcode">
+                    <img src="./assets/qqmusic.gif" alt="" class="qqmusicgif">
+                </div>
+                <div class="qqmusic-info">
+                    <h4>移动端qq音乐项目</h4>
+                    <div class="qqmusic-tec">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-js"></use>
+                        </svg>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-Nodejs"></use>
+                        </svg>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-Sass"></use>
+                        </svg>
+                    </div>
+                    <div class="qqmusic-intro">
+                        <ul class="intro-list">
+                            <li>express搭建服务器伪造请求，部署在https://app-qqmusicapi.wedeploy.io</li>
+                            <li>功能实现: 轮播组件 tab切换组件 播放器组件 歌词滚动</li>
+                            <li>性能优化: 懒加载 AJAX加锁 滚动事件节流</li>
+                            <li>githubpage部署的页面请求出了点问题，大部分音乐资源返回403forbidden 建议从github下载源码本地打开可以正常访问 </li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/cccccchenyuhao/qqmusic" class="github-btn">
+                        View Github
+                    </a>
+                </div>
+            </div>
+            <div class="cnode">
+                <h4>Vue.js技术栈实现cnode社区</h4>
+                <div class="cnode-tec">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-js"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-Nodejs"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-Vue"></use>
+                    </svg>
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-webpack"></use>
+                    </svg>
+                </div>
+                <img src="./assets/cnode.gif" alt="" class="qqmusicgif">
+                <p>单页应用。使用vue-cli搭建项目脚手架，axios发送请求，vue-router管理路由,api由cnode社区提供</p>
+                <ul class="cnode-component">
+                    <li>组件实现：</li>
+                    <li>
+                        Header: 头部导航栏
+                    </li>
+                    <li>
+                        PostList: 首页数据列表
+                    </li>
+                    <li>
+                        Pagination: 分页组件
+                    </li>
+                    <li>Article: 文章详情页</li>
+                    <li>Userinfo: 用户详情页</li>
+                    <li>SlideBar: 用户信息侧边栏</li>
+                </ul>
+                <a href="https://github.com/cccccchenyuhao/qqmusic" class="github-btn">
+                    View Github
+                </a>
+                <a href="https://chenyuhao.top/cnode/dist/" class="github-btn">
+                    Live Demo
+                </a>
+            </div>
+            <div class="qqmusic">
+                <div class="qqmusic-view">
+                    <img src="./assets/doubanQR.png" alt="" class="qrcode">
+                    <img src="./assets/douban.gif" alt="" class="qqmusicgif">
+                </div>
+                <div class="qqmusic-info">
+                    <h4>移动端豆瓣电影</h4>
+                    <div class="qqmusic-tec">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-js"></use>
+                        </svg>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-Nodejs"></use>
+                        </svg>
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-jQuery"></use>
+                        </svg>
+                    </div>
+                    <div class="qqmusic-intro">
+                        <ul class="intro-list">
+                            <li>express搭建服务器伪造请求，部署在https://app-qqmusicapi.wedeploy.io</li>
+                            <li>功能实现: 轮播组件 tab切换组件 播放器组件 歌词滚动</li>
+                            <li>性能优化: 懒加载 AJAX加锁 滚动事件节流</li>
+                            <li>githubpage部署的页面请求出了点问题，大部分音乐资源返回403forbidden 建议从github下载源码本地打开可以正常访问 </li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/cccccchenyuhao/qqmusic" class="github-btn">
+                        View Github
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            smartBackspace: true,
+            cursorChar: '_',
+            startDelay: 0,
+            typeSpeed: 50
+        });
+    </script>
+    <script src="https://at.alicdn.com/t/font_926107_9dwo3hd99tr.js"></script>
+</body>
+
+</html>
